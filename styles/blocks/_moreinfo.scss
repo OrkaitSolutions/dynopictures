@@ -1,0 +1,51 @@
+.moreinfo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	box-shadow: $shadow_x200;
+    background-color: white;
+	padding: 20px;
+
+	img {
+		max-width: 400px;
+		max-height: 400px;
+	}
+}
+
+.subinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__one {
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+		}
+	}
+
+	&__two {
+		padding: 10px;
+		max-width: 600px;
+		color: $primary;
+		padding: 20px;
+
+		> h1 {
+			font-size: 30px;
+			text-decoration: underline;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		> p {
+			font-size: 1.2em;
+		}
+	}
+
+	@include desktop {
+		flex-direction: row;
+	}
+}

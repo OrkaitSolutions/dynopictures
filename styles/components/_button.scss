@@ -1,0 +1,77 @@
+.btn-contact {
+	display: flex;
+	background: white;
+	font-size: 0.9em;
+    user-select: none;
+
+	margin-top: 20px;
+
+	width: 70vw;
+	max-width: 600px;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	box-shadow: $shadow_x200;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&__icon {
+		flex: 1;
+
+		background-color: $primary;
+		border-radius: 5px 0 0 5px;
+
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		max-width: 100px;
+
+		> svg {
+			width: 20px !important;
+			height: 20px !important;
+		}
+	}
+
+	&__text {
+		flex: 5;
+
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		color: $primary;
+		text-align: center;
+		border-radius: 0 5px 5px 0;
+		background-color: white;
+
+		background: linear-gradient(-45deg, transparent 50%, $primary 50%);
+		background-size: 300% 300%;
+		background-position: right;
+		transition: all 0.5s ease-out;
+	}
+
+	&:hover {
+		.btn-contact__icon {
+			background-color: shade($primary, 5%);
+		}
+
+		.btn-contact__text {
+			background-position: left;
+			color: white;
+		}
+	}
+
+	@include tablet {
+		font-size: 1.4em;
+
+        max-width: 400px;
+	}
+
+    @include desktop {
+        font-size: 1.2em;
+        // max-width: 00px;
+	}
+}

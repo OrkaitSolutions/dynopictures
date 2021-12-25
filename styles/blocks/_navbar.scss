@@ -1,0 +1,126 @@
+.navbar {
+	display: flex;
+	padding: 0 !important;
+    background-color: white;
+}
+
+.navbar__wrapper {
+	display: flex;
+	box-shadow: $shadow_x300;
+	flex-direction: column;
+	width: 100%;
+
+	@include tablet {
+		flex: 2;
+
+		width: auto;
+		padding-left: 50px;
+		padding-right: 50px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.navbar__items {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+
+	@include tablet {
+		flex: 8;
+
+		flex-direction: row;
+		margin: 10px;
+	}
+}
+
+.navbar__item {
+	// box-shadow: $shadow_x200;
+	border-bottom: 1px solid $primary;
+	user-select: none;
+
+	font-weight: bold;
+	color: $primary;
+
+	// margin: 10px;
+	padding: 10px;
+
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+	font-size: 1em;
+
+	&__about {
+		border: none;
+	}
+
+	&:hover{
+		background-color: $white;
+		color: black;
+		transition: background-color 0.3s ease-in-out;
+	}
+
+	&:visited {
+		color: red;
+		background-color: pink;
+	}
+
+	@include tablet {
+		box-shadow: $shadow_x200;
+		border: none;
+		max-width: 100px;
+		border-radius: 5px;
+
+		margin: 10px;
+		padding: 10px 30px;
+	}
+}
+
+.navbar__action {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+        transition: all 0.5s ease-out;
+
+        img {
+            max-height: 80px;
+
+            @include tablet{
+                max-height: 100px;
+            }
+        }
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1);
+            transition: all 0.3s ease-in;
+        }
+	}
+
+	&__hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+		border: 1px solid $primary;
+		padding: 10px;
+		border-radius: 5px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+	}
+
+	@include tablet {
+        margin: 10px 10px;
+		&__hamburger {
+			display: none;
+		}
+	}
+}

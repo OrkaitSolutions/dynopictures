@@ -1,0 +1,16 @@
+// @include test;
+@mixin font-lg {
+    font-size: 90px;
+}
+
+@mixin font-md {
+    font-size: 70px;
+}
+
+@mixin font-sm {
+    font-size: 50px;
+}
+
+@mixin font-xs {
+    font-size: 40px;
+}

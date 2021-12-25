@@ -1,0 +1,128 @@
+.direction__wrapper {
+	display: flex;
+	width: 100%;
+}
+
+.direction {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+
+	> div {
+		margin: 10px;
+	}
+
+	&__contact {
+		flex: 1;
+		order: 1;
+
+		width: 100%;
+		height: 400px;
+		padding-bottom: 50px;
+
+		// box-shadow: $shadow_x200;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__image {
+			padding: 25px;
+			width: 100%;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			> img {
+				border-radius: 5px;
+				width: 200px;
+				height: 200px;
+				filter: contrast(120%) saturate(30%);
+
+				@include tablet {
+					width: 300px;
+					height: 300px;
+				}
+
+				@include desktop {
+					width: 350px;
+					height: 350px;
+				}
+
+				@include large-desktop {
+					width: 300px;
+					height: 300px;
+				}
+			}
+		}
+
+		&__text {
+			user-select: none;
+			color: $primary;
+			font-weight: 500;
+			font-size: 1.5em;
+			margin: 5px;
+			text-align: center;
+		}
+
+		&__buttons {
+			display: flex;
+			flex-direction: column;
+			font-size: 1.6em;
+		}
+
+        &__address{
+            text-align: center;
+            color: $primary;
+            padding: 10px !important;
+            font-size: 1.2em;
+        }
+	}
+
+	@include tablet {
+		&__contact {
+			flex: 1;
+
+			&__text {
+				font-size: 1.4em;
+			}
+			&__buttons {
+				font-size: 1.2em;
+				> div {
+					margin: 20px;
+				}
+			}
+		}
+	}
+
+	// at DESKTOP
+	@include desktop {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+
+		> div {
+			height: 800px;
+		}
+
+		&__contact {
+			flex: 1;
+
+			&__text {
+				font-size: 1.5em;
+			}
+
+			&__buttons {
+				font-size: 1.3em;
+				> div {
+					margin: 20px;
+				}
+			}
+		}
+	}
+}

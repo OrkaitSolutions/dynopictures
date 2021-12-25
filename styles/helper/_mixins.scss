@@ -1,0 +1,53 @@
+@mixin sectionPadding {
+	padding: 60px 0;
+}
+
+@mixin test {
+	border: 1px solid violet;
+}
+
+@mixin test1 {
+	border: 1px solid palegreen;
+}
+
+@mixin test2 {
+	border: 1px solid aqua;
+}
+
+@mixin redColor {
+	color: red;
+}
+
+@mixin ajCenter {
+	align-content: center;
+	justify-content: center;
+}
+
+@mixin ajSelf {
+	align-self: center;
+	justify-self: center;
+}
+
+@mixin inverse($color, $bgColor) {
+	color: $bgColor;
+	background-color: $color;
+}
+
+@mixin swap($foreground, $background) {
+	color: $foreground;
+	background-color: $background;
+}
+
+
+@mixin blockMargin(){
+    margin: 10px 50px;
+}
+
+@mixin blockMargin-MD(){
+    margin: 10px 30px;
+}
+
+@mixin blockMargin-SM(){
+    margin: 10px 10px;
+}
+

@@ -1,0 +1,35 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// helpers
+@import './helper/variable';
+@import './helper/mixins';
+@import './helper/mediaqueries';
+@import './helper/normalize';
+@import './helper/functions';
+
+
+
+// base -> dependency -> [utils, helpers]
+@import './helper/base';
+
+// components
+@import './components/button';
+@import './components/blockquote';
+
+
+// blocks
+@import './blocks/navbar';
+@import './blocks/hero';
+@import './blocks/quote';
+@import './blocks/gallery';
+
+@import './blocks/direction';
+@import './blocks/footer';
+@import './blocks/contact';
+@import './blocks/about';
+@import './blocks/view';
+@import './blocks/lightbox';
+@import './blocks/category';
+@import './blocks/moreinfo';

@@ -1,0 +1,58 @@
+.quote__wrapper {
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: white;
+
+    // box-shadow: $shadow_x200;
+}
+
+blockquote {
+    width: 100%;
+	text-align: right;
+	// font-size: 1.2em;
+	margin: 50px auto;
+	font-style: normal;
+	color: $primary;
+	padding: 1.2em 30px 1.2em 75px;
+	border-bottom: 8px solid $primary;
+	line-height: 1.6;
+	position: relative;
+	box-shadow: $shadow_x200;
+
+	> p {
+        color: shade($primary, 30%);
+		&::before {
+			content: "–";
+            margin: 10px;
+		}
+		text-transform: lowercase;
+	}
+
+    > h1 {
+        font-size: 1.3em !important;
+    }
+
+    @include tablet{
+
+        > h1 {
+            font-size: 1.5em !important;
+        }
+
+        > p{
+            font-size: 1.5em !important;
+        }
+        
+    }
+}
+
+blockquote::before {
+	font-size: 200px;
+	font-family: Arial;
+	content: "\201C";
+	color: $primary;
+	position: absolute;
+	left: 10px;
+	top: -45px;
+}
