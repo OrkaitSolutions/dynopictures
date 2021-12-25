@@ -32,7 +32,7 @@ yarn-error.log*
 .env.production.local
 
 yarn.lock
-package-json.lock
+package-lock.json
 
 # vercel
 .vercel
