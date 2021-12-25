@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from "react";
 // Import Swiper styles
@@ -16,15 +15,17 @@ SwiperCore.use([Autoplay, Pagination]);
 
 const HeroBlock = () => {
 	const { width } = useContext(UseContext);
-	const [sliderDataFinal, setSliderData] = useState(sliderData);
+    const [sliderDataFinal, setSliderData] = useState(sliderData);
 
-	useEffect(() => {
-		if (width >= 600) {
-			setSliderData(sliderData);
-		} else {
-			setSliderData(sliderDataMobile);
-		}
-	}, [width]);
+    useEffect(() => {
+        if (width >= 600) {
+            setSliderData(sliderData);
+        } else {
+            setSliderData(sliderDataMobile);
+        }
+    }, [width]);
+
+ 
 
 	return (
 		<div className="swiper__wrapper">
@@ -37,11 +38,13 @@ const HeroBlock = () => {
 				}}
 				className="mySwiper"
 			>
-				{Object.values(sliderDataFinal).map((url) => (
-					<SwiperSlide>
-						<img src={url} alt="" />
-					</SwiperSlide>
-				))}
+				{
+                    Object.values(sliderDataFinal).map((url) => (
+                        <SwiperSlide>
+                            <img src={url} alt="" />
+                        </SwiperSlide>
+                  ))
+                }
 			</Swiper>
 		</div>
 	);

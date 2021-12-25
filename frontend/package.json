@@ -1,22 +1,26 @@
 {
-	"name": "dynopictures",
+	"name": "frontend",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"sass": "node-sass ./styles/index.scss ./styles/index.css -w"
+		"sass": "node-sass ./styles/index.scss ./styles/index.css -w",
+		"build:sass": "node-sass -r --output-style compressed styles/index.scss -o dist",
+		"watch:sass": "npm run build:sass && yarn build:sass -- -w"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.36",
 		"@fortawesome/free-solid-svg-icons": "^5.15.4",
 		"@fortawesome/react-fontawesome": "^0.1.16",
 		"axios": "^0.24.0",
+		"bootstrap": "^5.1.3",
 		"lightgallery": "^2.3.0",
 		"next": "12.0.2",
 		"react": "17.0.2",
 		"react-before-after-slider-component": "^1.1.1",
+		"react-bootstrap": "^2.0.1",
 		"react-dom": "17.0.2",
 		"react-grid-gallery": "^0.5.5",
 		"react-lightbox-gallery": "^2.0.1",
@@ -24,10 +28,13 @@
 		"react-scramble-text": "^1.0.1",
 		"sweetalert2": "^11.1.10",
 		"swiper": "^7.2.0",
+		"tailwindcss": "^2.2.19",
 		"validator": "^13.7.0"
 	},
 	"devDependencies": {
-		"eslint": "8.5.0",
-		"eslint-config-next": "12.0.7"
+		"autoprefixer": "^10.4.0",
+		"eslint": "7",
+		"eslint-config-next": "12.0.2",
+		"postcss": "^8.3.11"
 	}
 }

@@ -9,12 +9,10 @@ const about = () => {
 			<div className="about">
 				<h2> Why Choose Dyno pictures?</h2>
 				<p>
-					{`
-                        Because when things matter, you've only got one shot. And
+					Because when things matter, you've only got one shot. And
 					there's no substitute for experience. These days,
 					photography is practiced by anyone with a smartphone, but
 					it's mastered by few.
-                        `}
 				</p>
 
 				<h3>Consistency</h3>
@@ -36,10 +34,9 @@ const about = () => {
 
 				<h3>Professionalism</h3>
 				<p>
-					{`When you hire DynoPictures(DP) you know you're getting
-                        someone who is willing to go the extra mile to deliver the
-                        best possible images.
-                        `}
+					When you hire DynoPictures(DP) you know you're getting
+					someone who is willing to go the extra mile to deliver the
+					best possible images.
 				</p>
 			</div>
 		</section>

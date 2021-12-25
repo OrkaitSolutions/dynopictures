@@ -30,7 +30,7 @@ const FooterBlock = () => {
 				<div className="footer__social__item footer__social__item-instagram">
 					<a
 						target="_blank"
-						href="https://api.whatsapp.com/send/?phone=918291219363&text&app_absent=0" rel="noreferrer"
+						href="https://api.whatsapp.com/send/?phone=918291219363&text&app_absent=0"
 					>
 						<Image
 							src="/social/whatsapp.svg"
@@ -51,10 +51,10 @@ const FooterBlock = () => {
 				<div className="footer__main__credits">
 					Website Designed and Developed by{" "}
 					<Link
-						href="https://github.com/OrkaitSolutions"
+						href="https://github.com/kailasmahavarkar"
 						passHref={true}
 					>
-						Orkaitsolutions
+						Kailas Mahavarkar
 					</Link>
 				</div>
 			</div>
