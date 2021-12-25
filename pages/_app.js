@@ -1,8 +1,4 @@
-// import "../styles/flexboxgrid.min.css";
 import "../styles/index.css";
-// import 'tailwindcss/tailwind.css'
-import "bootstrap/dist/css/bootstrap.css";
-// import '../styles/utils.css';
 import { useEffect, useRef } from "react";
 import useWindowDimensions from "../components/hooks/useWindowDimensions";
 import UseContext from "../components/context/UseContext";

@@ -51,10 +51,10 @@ const FooterBlock = () => {
 				<div className="footer__main__credits">
 					Website Designed and Developed by{" "}
 					<Link
-						href="https://github.com/kailasmahavarkar"
+						href="https://github.com/OrkaitSolutions"
 						passHref={true}
 					>
-						Kailas Mahavarkar
+						Orkaitsolutions
 					</Link>
 				</div>
 			</div>
