@@ -19,9 +19,13 @@ const isEmpty = (arg) => {
 	return false;
 };
 
-const url = (endpoint) => {
-	return `https://dynopictures.com${endpoint ?? "/"}`;
-};
+const SERVER =
+	process.env.NEXT_PUBLIC_MODE === "PROD"
+		? "https://dynopictures.com"
+		: "http://localhost:3000";
 
+const url = (endpoint) => {
+	return `${SERVER}${endpoint ?? "/"}`;
+};
 
 export { useEffectAsync, isEmpty, url };

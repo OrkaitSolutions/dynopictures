@@ -22,7 +22,7 @@ const closeupData = [
 		thumb_src: "/gallery/closeup/thumb/SHARDA.jpg",
 		info: "SHARDA.jpg",
 		credit_text: "click by dynopictures photography studio",
-	},
+	}
 ];
 
 export default closeupData;
