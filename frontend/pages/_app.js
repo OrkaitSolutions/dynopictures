@@ -1,8 +1,4 @@
-// import "../styles/flexboxgrid.min.css";
 import "../styles/index.css";
-// import 'tailwindcss/tailwind.css'
-import "bootstrap/dist/css/bootstrap.css";
-// import '../styles/utils.css';
 import { useEffect, useRef } from "react";
 import useWindowDimensions from "../components/hooks/useWindowDimensions";
 import UseContext from "../components/context/UseContext";
@@ -28,10 +24,7 @@ const HeadMeta = () => (
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Dyno pictures" />
 		<meta property="og:description" content="Dyno pictures" />
-		<meta
-			property="og:image"
-			content="/assets/logo.png"
-		/>
+		<meta property="og:image" content="/assets/logo.png" />
 		<meta property="og:url" content="https://dynopictures.com/" />
 		<meta property="og:site_name" content="Dyno pictures" />
 	</Head>

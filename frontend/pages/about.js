@@ -1,4 +1,5 @@
 import TextScramble from "../components/blocks/TextSramble";
+import aboutData from "../data/about.data";
 
 const about = () => {
 	return (
@@ -7,37 +8,21 @@ const about = () => {
 				<TextScramble />
 			</div>
 			<div className="about">
-				<h2> Why Choose Dyno pictures?</h2>
-				<p>
-					Because when things matter, you've only got one shot. And
-					there's no substitute for experience. These days,
-					photography is practiced by anyone with a smartphone, but
-					it's mastered by few.
-				</p>
+				{/* title */}
+				<h2> {aboutData.question.title} </h2>
+				<p> {aboutData.question.content} </p>
 
-				<h3>Consistency</h3>
-				<p>
-					DynoPictures(DP) know how to achieve great results—every
-					time. You get a strong collection of images that tell your
-					story, not a few lucky snapshots, and you will work with
-					someone who knows how to produce a quality image under any
-					circumstances.
-				</p>
-				<h3>Technical Skills</h3>
-				<p>
-					DynoPictures(DP) are more than picture takers. They are
-					students of art, lighting, posing, fashion and even interior
-					design. They combine these elements to create images that
-					fit your unique style and become works of art you will
-					treasure for generations.
-				</p>
+				{/* consistency */}
+				<h2> {aboutData.consistency.title} </h2>
+				<p> {aboutData.consistency.content} </p>
 
-				<h3>Professionalism</h3>
-				<p>
-					When you hire DynoPictures(DP) you know you're getting
-					someone who is willing to go the extra mile to deliver the
-					best possible images.
-				</p>
+				{/* technical */}
+				<h2> {aboutData.technical.title} </h2>
+				<p> {aboutData.technical.content} </p>
+
+				{/* professionalism */}
+				<h2> {aboutData.professionalism.title} </h2>
+				<p> {aboutData.professionalism.content} </p>
 			</div>
 		</section>
 	);

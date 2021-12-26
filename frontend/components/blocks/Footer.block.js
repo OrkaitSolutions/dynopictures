@@ -30,7 +30,7 @@ const FooterBlock = () => {
 				<div className="footer__social__item footer__social__item-instagram">
 					<a
 						target="_blank"
-						href="https://api.whatsapp.com/send/?phone=918291219363&text&app_absent=0"
+						href="https://api.whatsapp.com/send/?phone=918291219363&text&app_absent=0" rel="noreferrer"
 					>
 						<Image
 							src="/social/whatsapp.svg"
