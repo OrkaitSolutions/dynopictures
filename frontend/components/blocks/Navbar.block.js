@@ -15,13 +15,14 @@ const NavbarBlock = () => {
 
 	useEffect(() => {
 		if (value.width >= 768) {
-			setMenuOpen(false);
-		} else {
 			setMenuOpen(true);
+		} else {
+			setMenuOpen(false);
 		}
 	}, [value.width]);
 
 	const menuStateHandler = () => {
+        console.log(menuOpen);
 		setMenuOpen(!menuOpen);
 	};
 
@@ -44,11 +45,13 @@ const NavbarBlock = () => {
 						className="navbar__action__hamburger"
 						onClick={menuStateHandler}
 					>
-						<FontAwesomeIcon icon={faBars} color={"#ddaa44"} />
+						<FontAwesomeIcon icon={faBars} color={"#ddaa44"}  size="1x" />
 					</div>
 				</div>
 
-				<nav className="navbar__items" hidden={menuOpen}>
+				<nav className="navbar__items" style={{
+                    display: menuOpen ? "flex" : "none"
+                }}>
 					<Link href="/" passHref>
 						<div className="navbar__item">Home</div>
 					</Link>
