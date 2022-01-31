@@ -73,7 +73,7 @@ const DirectionBlock = () => {
 							</div>
 							<Link
 								passHref={true}
-								href="https://www.google.com/search?q=Dyno+pictures,+Navjeevan+Nagar,+Vikhroli,+Mumbai,+Maharashtra&source=lmns&bih=577&biw=1229&hl=en&sa=X&ved=2ahUKEwiipsa2g4_0AhWZjNgFHSv8DcUQ_AUoAHoECAEQAA"
+								href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.6085559662413!2d72.92912481750997!3d19.119194902496474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7914fb6f4e7%3A0x6709e463735a6721!2sRobin%20General%20Store!5e0!3m2!1sen!2sin!4v1643627035238!5m2!1sen!2sin" 
 							>
 								<div className="btn-contact__text">Find Us</div>
 							</Link>
